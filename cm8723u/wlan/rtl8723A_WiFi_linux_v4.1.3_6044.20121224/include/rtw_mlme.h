@@ -230,7 +230,7 @@ struct cfg80211_wifidirect_info{
 	struct ieee80211_channel	remain_on_ch_channel;
 	enum nl80211_channel_type	remain_on_ch_type;
 	u64						remain_on_ch_cookie;
-	struct net_device 			*remain_on_ch_dev;
+	struct wireless_dev 	*remain_on_ch_dev;
 	bool is_ro_ch;
 };
 #endif //CONFIG_IOCTL_CFG80211
